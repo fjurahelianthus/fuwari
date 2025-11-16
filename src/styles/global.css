@@ -1,7 +1,41 @@
 @font-face {
-    font-family: 'KingHwaOldSong-MN';
-    src: url('/fonts/kinghwa.tff') format('tff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'LXGWBrightTC';
+  src: url('/fonts/LXGWBrightTC-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LXGWBrightTC';
+  src: url('/fonts/LXGWBrightTC-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LXGWBrightTC';
+  src: url('/fonts/LXGWBrightTC-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LXGWBrightTC';
+  src: url('/fonts/LXGWBrightTC-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LXGWBrightTC';
+  src: url('/fonts/LXGWBrightTC-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LXGWBrightTC';
+  src: url('/fonts/LXGWBrightTC-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
 }

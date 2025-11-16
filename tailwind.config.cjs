@@ -6,7 +6,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["KingHwaOldSong-MN", "sans-serif", ...defaultTheme.fontFamily.sans],
+				sans: ["LXGWBrightTC", "sans-serif", ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},
