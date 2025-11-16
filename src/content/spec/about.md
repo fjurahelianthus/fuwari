@@ -1,9 +1,13 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 關於我
 
-::github{repo="saicaca/fuwari"}
+來到這裡的客人，可以稱呼我為莉莉婭。我也有許多其他的名字，如果你碰巧認識一些，那就按照你喜歡的名字來吧。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+這裡是我的『花店』，雖然並沒有許多花兒，但是也不需要有那麼多花兒。一些熟悉我的人可能知道，我的名字一直遵循著一個特定的特徵：`『花』+『花的學名』`。這個博客的域名也是一樣，是 _Fjura_（馬耳他語）+ _Helianthus_ （向日葵屬）的組合，這正是花店裡的『花兒』。
+
+# 關於博客
+
+本人正在研修計算機的本科課程，但是這一博客的目的並不在於此。也許通過博客的[字體](https://zhuanlan.zhihu.com/p/1915922891633043436)就能看得出來，我更願意往這裡添加點比較文科的內容——精神分析與哲學的讀書筆記等。~~當然，也許哪天心血來潮就會開始寫點別的呢？~~
+
+> #### _僕に心を_ _君に花束を_
+>
+> ——**《忘れてください》\\ ヨルシカ**
