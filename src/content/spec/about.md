@@ -11,8 +11,11 @@
 字體的 Repo 如下：
 
 ::github{repo="lxgw/LxgwBright"}
+
 ::github{repo="lxgw/LxgwBright-Code"}
 
-> #### _僕に心を_ _君に花束を_
->
-> ——**《忘れてください》\\ ヨルシカ**
+---
+
+***僕に心を <br> 君に花束を***
+
+<p align="right"> <b> ——《忘れてください》\\ ヨルシカ </b> </p>
