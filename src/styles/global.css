@@ -1,10 +1,66 @@
 @import url('https://fontsapi.zeoseven.com/292/tc-regular/result.css'); /* 引入 LXGW 明體 常規 體字型 */
 @import url('https://fontsapi.zeoseven.com/292/tc-medium/result.css');  /* 引入 LXGW 明體 中粗 體字型 */
 @import url('https://fontsapi.zeoseven.com/292/tc-light/result.css');    /* 引入 LXGW 明體 粗體 體字型 */
+
 /* Ysabeau (ZSFT-891) - 正文西文字体 */
-@import url("data:text/css,%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Finfant.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Finfant-italic.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Aitalic%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Fitalic.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Aitalic%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Fmain.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Foffice.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Foffice-italic.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Aitalic%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Fsc.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D");
+@font-face {
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/infant.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/infant-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/main.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/office.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/office-italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/sc.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 /* Monaspace Argon (ZSFT-gj) - 代码字体 */
-@import url("data:text/css,%40font-face%7Bfont-family%3A%22ZSFT-gj%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2Fgj%2Fmain.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D");
+@font-face {
+  font-family: "ZSFT-gj";
+  src: url("https://fontsapi.zeoseven.com/gj/main.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
 
 /* KaTeX 中文字体支持 */
 .katex {
