@@ -73,3 +73,14 @@
   src: url('/fonts/LXGWBrightCodeTC-ExtraLight.ttf') format('truetype');
   font-weight: 200;
 }
+
+/* KaTeX 中文字体支持 */
+.katex {
+  font-family: 'KaTeX_Main', 'LXGWBrightTC', serif !important;
+}
+
+.katex .text,
+.katex .textrm,
+.katex .mord.text {
+  font-family: 'LXGWBrightTC', serif !important;
+}
