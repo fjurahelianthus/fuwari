@@ -1,86 +1,19 @@
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-MediumItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-}
+@import url('https://fontsapi.zeoseven.com/292/tc-regular/result.css'); /* 引入 LXGW 明體 常規 體字型 */
+@import url('https://fontsapi.zeoseven.com/292/tc-medium/result.css');  /* 引入 LXGW 明體 中粗 體字型 */
+@import url('https://fontsapi.zeoseven.com/292/tc-light/result.css');    /* 引入 LXGW 明體 粗體 體字型 */
+/* Ysabeau (ZSFT-891) - 正文西文字体 */
+@import url("data:text/css,%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Finfant.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Finfant-italic.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Aitalic%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Fitalic.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Aitalic%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Fmain.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Foffice.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Foffice-italic.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Aitalic%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D%40font-face%7Bfont-family%3A%22ZSFT-891%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2F891%2Fsc.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D");
+/* Monaspace Argon (ZSFT-gj) - 代码字体 */
+@import url("data:text/css,%40font-face%7Bfont-family%3A%22ZSFT-gj%22%3Bsrc%3Aurl(%22https%3A%2F%2Ffontsapi.zeoseven.com%2Fgj%2Fmain.woff2%22)%20format(%22woff2%22)%3Bfont-style%3Anormal%3Bfont-weight%3A100%20900%3Bfont-display%3Aswap%3B%7D");
 
 /* KaTeX 中文字体支持 */
 .katex {
-  font-family: 'KaTeX_Main', 'LXGWBrightTC', serif !important;
+  font-family: 'KaTeX_Main', 'ZSFT-891', 'LXGW WenKai TC', serif !important;
 }
 
 .katex .text,
 .katex .textrm,
 .katex .mord.text {
-  font-family: 'LXGWBrightTC', serif !important;
+  font-family: 'ZSFT-891', 'LXGW WenKai TC', serif !important;
 }
+
