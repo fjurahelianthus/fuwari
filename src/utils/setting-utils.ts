@@ -19,7 +19,7 @@ export function getHue(): number {
 }
 
 export function setHue(hue: number): void {
-	localStorage.setItem("hue", String(hue));
+	// localStorage.setItem("hue", String(hue)); // 禁用存储
 	const r = document.querySelector(":root") as HTMLElement;
 	if (!r) {
 		return;
