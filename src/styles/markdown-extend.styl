@@ -71,6 +71,82 @@
       &:before
         background: var(--admonitions-color-caution)
 
+  blockquote.admonition
+    --admonition-accent: var(--primary)
+    position: relative
+    margin: 1.75rem 0
+    padding: 1rem 1.25rem 1rem 1.5rem
+    background: var(--card-bg)
+    border: 1px solid var(--line-color)
+    border-left: 0
+    border-radius: var(--radius-large)
+    box-shadow: var(--paper-inset)
+
+    &:before
+      left: 0
+      top: 0
+      width: 4px
+      height: 100%
+      background: var(--admonition-accent)
+
+    &:after
+      content: ''
+      position: absolute
+      right: 0.75rem
+      top: 0.75rem
+      width: 2.25rem
+      height: 2.25rem
+      border: 1px solid var(--line-color)
+      opacity: 0.22
+      pointer-events: none
+
+    .bdm-title
+      display: flex
+      align-items: center
+      width: fit-content
+      margin: 0 0 0.65rem
+      padding: 0.18rem 0.45rem 0.15rem
+      background: var(--btn-regular-bg)
+      border: 1px solid var(--line-color)
+      color: var(--admonition-accent)
+      font-size: 0.72rem
+      font-weight: 700
+      line-height: 1.25
+      letter-spacing: 0.16em
+      text-transform: uppercase
+
+      &:before
+        content: ''
+        display: inline-block
+        width: 0.52rem
+        height: 0.52rem
+        margin-right: 0.45rem
+        background: var(--admonition-accent)
+        mask-image: none
+        transform: none
+
+    p
+      margin-top: 0.55rem
+      margin-bottom: 0.55rem
+
+      &:last-child
+        margin-bottom: 0
+
+    &.bdm-tip
+      --admonition-accent: var(--admonitions-color-tip)
+
+    &.bdm-note
+      --admonition-accent: var(--admonitions-color-note)
+
+    &.bdm-important
+      --admonition-accent: var(--admonitions-color-important)
+
+    &.bdm-warning
+      --admonition-accent: var(--admonitions-color-warning)
+
+    &.bdm-caution
+      --admonition-accent: var(--admonitions-color-caution)
+
   img
     border-radius: var(--radius-large)
     border: 1px solid var(--line-color)
