@@ -14,6 +14,8 @@
 
 ::github{repo="lxgw/LxgwBright-Code"}
 
+::github{repo="TrionesType/zhuque"}
+
 ---
 
 ***僕に心を <br> 君に花束を***

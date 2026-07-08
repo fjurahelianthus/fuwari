@@ -141,23 +141,9 @@ export default defineConfig({
 			[
 				rehypeAutolinkHeadings,
 				{
-					behavior: "append",
+					behavior: "wrap",
 					properties: {
-						className: ["anchor"],
-					},
-					content: {
-						type: "element",
-						tagName: "span",
-						properties: {
-							className: ["anchor-icon"],
-							"data-pagefind-ignore": true,
-						},
-						children: [
-							{
-								type: "text",
-								value: "#",
-							},
-						],
+						className: ["heading-anchor"],
 					},
 				},
 			],

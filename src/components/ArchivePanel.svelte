@@ -94,7 +94,7 @@ onMount(async () => {
                 </div>
                 <div class="w-[15%] md:w-[10%]">
                     <div
-                            class="h-3 w-3 bg-none rounded-full outline outline-[var(--primary)] mx-auto
+                            class="h-3 w-3 bg-none rounded-[var(--radius-large)] outline outline-[var(--primary)] mx-auto
                   -outline-offset-[2px] z-50 outline-3"
                     ></div>
                 </div>
@@ -107,7 +107,7 @@ onMount(async () => {
                 <a
                         href={getPostUrlBySlug(post.slug)}
                         aria-label={post.data.title}
-                        class="group btn-plain !block h-10 w-full rounded-lg hover:text-[initial]"
+                        class="group btn-plain !block h-10 w-full rounded-[var(--radius-large)] hover:text-[initial]"
                 >
                     <div class="flex flex-row justify-start items-center h-full">
                         <!-- date -->

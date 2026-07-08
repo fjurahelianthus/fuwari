@@ -5,25 +5,29 @@
 @layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
+        border: 1px solid var(--line-color);
+        box-shadow: var(--paper-shadow);
     }
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
         @apply transition;
     }
     .card-shadow {
-        @apply drop-shadow-[0_2px_4px_rgba(0,0,0,0.005)]
+        filter: drop-shadow(0 1px 0 rgba(80, 64, 43, 0.08));
     }
     .expand-animation {
         @apply relative before:ease-out before:transition active:bg-none hover:before:bg-[var(--btn-plain-bg-hover)] active:before:bg-[var(--btn-plain-bg-active)] z-0
-        before:absolute before:rounded-[inherit] before:inset-0 before:scale-[0.85] hover:before:scale-100 before:-z-10
+        before:absolute before:rounded-[inherit] before:inset-0 before:scale-100 before:-z-10
     }
     .link {
-        @apply transition rounded-md p-1 -m-1 expand-animation;
+        @apply transition rounded-[var(--radius-large)] p-1 -m-1 expand-animation;
     }
     .link-lg {
-        @apply transition rounded-md p-1.5 -m-1.5 expand-animation;
+        @apply transition rounded-[var(--radius-large)] p-1.5 -m-1.5 expand-animation;
     }
     .float-panel {
-        @apply top-[5.25rem] rounded-[var(--radius-large)] overflow-hidden bg-[var(--float-panel-bg)] transition shadow-xl dark:shadow-none
+        @apply top-[5.25rem] rounded-[var(--radius-large)] overflow-hidden bg-[var(--float-panel-bg)] transition
+        border border-[var(--line-color)];
+        box-shadow: var(--paper-shadow);
     }
     .float-panel-closed {
         @apply -translate-y-1 opacity-0 pointer-events-none
@@ -35,6 +39,7 @@
     .btn-card {
         @apply transition flex items-center justify-center bg-[var(--card-bg)] hover:bg-[var(--btn-card-bg-hover)]
         active:bg-[var(--btn-card-bg-active)]
+        border border-[var(--line-color)];
     }
     .btn-card.disabled {
         @apply pointer-events-none text-black/10 dark:text-white/10
@@ -54,7 +59,7 @@
     }
     .btn-regular {
         @apply transition flex items-center justify-center bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-regular-bg-hover)] active:bg-[var(--btn-regular-bg-active)]
-        text-[var(--btn-content)] dark:text-white/75
+        text-[var(--btn-content)] dark:text-white/75 border border-[var(--line-color)]
     }
 
     .link-underline {
@@ -96,8 +101,9 @@
     }
 
     .meta-icon {
-        @apply w-8 h-8 transition rounded-md flex items-center justify-center bg-[var(--btn-regular-bg)]
+        @apply w-8 h-8 transition rounded-[var(--radius-large)] flex items-center justify-center bg-[var(--btn-regular-bg)]
         text-[var(--btn-content)] mr-2
+        border border-[var(--line-color)];
     }
     .with-divider {
         @apply before:content-['/'] before:ml-1.5 before:mr-1.5 before:text-[var(--meta-divider)] before:text-sm
@@ -112,6 +118,29 @@
     .btn-regular-dark.success {
         @apply bg-[oklch(0.75_0.14_var(--hue))] dark:bg-[oklch(0.75_0.14_var(--hue))]
     }
+}
+
+html {
+    background-color: var(--page-bg);
+}
+
+body {
+    background:
+        linear-gradient(90deg, rgba(80, 64, 43, 0.035) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(80, 64, 43, 0.025) 1px, transparent 1px),
+        radial-gradient(circle at 20% 10%, rgba(120, 90, 54, 0.05), transparent 28rem),
+        var(--page-bg);
+    background-size: 28px 28px, 28px 28px, auto, auto;
+    color: oklch(0.25 0.018 72);
+}
+
+:root.dark body {
+    background:
+        linear-gradient(90deg, rgba(230, 220, 198, 0.025) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(230, 220, 198, 0.018) 1px, transparent 1px),
+        radial-gradient(circle at 20% 10%, rgba(128, 86, 64, 0.12), transparent 30rem),
+        var(--page-bg);
+    color: oklch(0.84 0.012 82);
 }
 
 .custom-md img, #post-cover img {
@@ -143,7 +172,7 @@
 }
 
 .custom-md spoiler {
-  @apply bg-[var(--codeblock-bg)] hover:bg-transparent px-1 py-0.5 overflow-hidden rounded-md transition-all duration-150;
+  @apply bg-[var(--codeblock-bg)] hover:bg-transparent px-1 py-0.5 overflow-hidden rounded-[var(--radius-large)] transition-all duration-150;
 
   &:not(:hover) {
     color: var(--codeblock-bg);
