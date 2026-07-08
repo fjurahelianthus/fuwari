@@ -1,75 +1,40 @@
+@import url('https://fontsapi.zeoseven.com/292/tc-regular/result.css'); /* 引入 LXGW 明體 常規 體字型 */
+@import url('https://fontsapi.zeoseven.com/292/tc-medium/result.css');  /* 引入 LXGW 明體 中粗 體字型 */
+@import url('https://fontsapi.zeoseven.com/292/tc-light/result.css');    /* 引入 LXGW 明體 粗體 體字型 */
+
+/* Ysabeau (ZSFT-891) - 正文西文字体 */
 @font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/main.woff2") format("woff2");
   font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
 }
-
 @font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-Italic.ttf') format('truetype');
-  font-weight: 400;
+  font-family: "ZSFT-891";
+  src: url("https://fontsapi.zeoseven.com/891/italic.woff2") format("woff2");
   font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
 }
 
+/* Monaspace Argon (ZSFT-gj) - 代码字体 */
 @font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-Light.ttf') format('truetype');
-  font-weight: 300;
+  font-family: "ZSFT-gj";
+  src: url("https://fontsapi.zeoseven.com/gj/main.woff2") format("woff2");
   font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
 }
 
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
+/* KaTeX 中文字体支持 */
+.katex {
+  font-family: 'KaTeX_Main', 'ZSFT-891', 'LXGW WenKai TC', serif !important;
 }
 
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
+.katex .text,
+.katex .textrm,
+.katex .mord.text {
+  font-family: 'ZSFT-891', 'LXGW WenKai TC', serif !important;
 }
 
-@font-face {
-  font-family: 'LXGWBrightTC';
-  src: url('/fonts/LXGWBrightTC-MediumItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'LXGWBrightCodeTC';
-  src: url('/fonts/LXGWBrightCodeTC-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-}
