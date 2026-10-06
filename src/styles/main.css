@@ -7,6 +7,7 @@
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
         background-image: var(--paper-grain), var(--paper-light);
         background-size: 512px 512px, auto;
+        background-position: var(--tex-x, 0) var(--tex-y, 0), 0 0;
         background-blend-mode: multiply, normal;
         border: 1px solid var(--line-color);
         box-shadow: var(--paper-shadow);
@@ -32,6 +33,7 @@
         border border-[var(--line-color)];
         background-image: var(--paper-grain), var(--paper-light);
         background-size: 512px 512px, auto;
+        background-position: var(--tex-x, 0) var(--tex-y, 0), 0 0;
         background-blend-mode: multiply, normal;
         box-shadow: var(--paper-shadow);
     }
@@ -131,18 +133,18 @@ html {
 }
 
 :root.dark .card-base, :root.dark .float-panel {
-    background-blend-mode: screen, normal;
+    background-blend-mode: multiply, normal;
 }
 
 body {
-    /* 桌面纹理统一由 html 的 --desk-fibers 提供，body 保持透明以免出现两层纹理 */
+    /* 桌面纹理统一由 html 的 --desk-tex 提供，body 保持透明以免出现两层纹理 */
     background: none;
     color: oklch(0.17 0.010 60);
 }
 
 :root.dark body {
     background: none;
-    color: oklch(0.88 0.012 90);
+    color: oklch(0.86 0.012 85);
 }
 
 /* TOC：左侧细线 + 红笔色文字，当前章节在线上有红色标记 */

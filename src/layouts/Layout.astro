@@ -101,6 +101,30 @@ const bannerOffset =
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<!-- Random texture offsets so the repeated paper tile never lines up the same way twice: one for the desk per page load, one per card -->
+		<script is:inline>
+			(() => {
+				const rnd = () => Math.floor(Math.random() * 512) + "px";
+				const root = document.documentElement;
+				root.style.setProperty("--desk-x", rnd());
+				root.style.setProperty("--desk-y", rnd());
+				const apply = () => document.querySelectorAll(".card-base:not([data-tex]), .float-panel:not([data-tex])").forEach((el) => {
+					el.dataset.tex = "";
+					el.style.setProperty("--tex-x", rnd());
+					el.style.setProperty("--tex-y", rnd());
+				});
+				let queued = false;
+				const schedule = () => {
+					if (queued) return;
+					queued = true;
+					requestAnimationFrame(() => { queued = false; apply(); });
+				};
+				document.addEventListener("DOMContentLoaded", () => {
+					apply();
+					new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
+				});
+			})();
+		</script>
 		<!-- Zhuque Fangsong, split into unicode-range slices: the browser only downloads the slices a page actually uses -->
 		<link rel="stylesheet" href={url("/fonts/zhuque/zhuque.css")} />
 		{favicons.map(favicon => (
