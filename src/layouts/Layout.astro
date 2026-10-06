@@ -101,6 +101,8 @@ const bannerOffset =
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<!-- Zhuque Fangsong, split into unicode-range slices: the browser only downloads the slices a page actually uses -->
+		<link rel="stylesheet" href={url("/fonts/zhuque/zhuque.css")} />
 		{favicons.map(favicon => (
 			<link rel="icon"
 				  href={favicon.src.startsWith('/') ? url(favicon.src) : favicon.src}

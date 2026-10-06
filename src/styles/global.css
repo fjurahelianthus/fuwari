@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap'); /* EB Garamond + Courier Prime (Google Fonts) - 正文西文字体 */
 
-@font-face {
-    font-family: "Zhuque Fangsong (technical preview)";
-    src: url("/fonts/ZhuqueFangsong-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+/* 朱雀仿宋 @font-face 切片见 public/fonts/zhuque/zhuque.css（由 Layout.astro 引入） */
 
 :root {
   --font-cjk: 'EB Garamond', 'Zhuque Fangsong (technical preview)', serif;
