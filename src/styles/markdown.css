@@ -1,5 +1,5 @@
 .custom-md {
-    @apply leading-8 text-[oklch(0.27_0.018_72)] dark:text-[oklch(0.84_0.012_82)];
+    @apply leading-8 text-[oklch(0.20_0.010_60)] dark:text-[oklch(0.88_0.012_90)];
 
     h1 {
         @apply text-3xl border-b border-[var(--line-color)] pb-3;
@@ -14,7 +14,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        @apply font-bold tracking-normal text-[oklch(0.22_0.018_72)] dark:text-[oklch(0.90_0.012_82)];
+        @apply font-bold tracking-normal text-[oklch(0.15_0.010_60)] dark:text-[oklch(0.93_0.012_90)];
 
         .heading-anchor {
             @apply transition no-underline text-inherit;
@@ -70,7 +70,7 @@
 
     .copy-btn {
         all: initial;
-        @apply flex items-center justify-center opacity-0 shadow-lg shadow-black/30 absolute active:scale-[0.99] h-8 w-8 top-3 right-3 text-sm rounded-[var(--radius-large)] transition-all ease-in-out z-20 cursor-pointer
+        @apply flex items-center justify-center opacity-0 absolute active:scale-[0.99] h-8 w-8 top-3 right-3 text-sm rounded-[var(--radius-large)] transition-all ease-in-out z-20 cursor-pointer
         bg-[oklch(0.45_0.015_72)] hover:bg-[oklch(0.50_0.015_72)] active:bg-[oklch(0.55_0.015_72)]
         dark:bg-[oklch(0.30_0.015_72)] dark:hover:bg-[oklch(0.35_0.018_72)] dark:active:bg-[oklch(0.40_0.02_72)];
     }
