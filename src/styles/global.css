@@ -10,15 +10,15 @@
 /* 纸张质感（档案馆）：桌面与卡片纸纹均取自 ambientCG Paper006（CC0）与光线渐层。只改背景，不影响组件结构 */
 :root {
   --pen-red: oklch(0.42 0.16 27);
-  --desk-tex: url("/textures/paper-desk.webp");
-  --paper-grain: url("/textures/paper-card-light.webp");
+  --desk-tex: url("/textures/paper-desk-v2.webp");
+  --paper-grain: url("/textures/paper-card-light-v2.webp");
   --paper-light: linear-gradient(transparent, transparent);
 }
 
 :root.dark {
   --pen-red: oklch(0.64 0.22 26);
-  --desk-tex: url("/textures/paper-desk-dark.webp"); /* 深色桌面纹理压到极淡，否则与卡片纹理叠在一起会很脏 */
-  --paper-grain: url("/textures/paper-card-dark.webp");
+  --desk-tex: url("/textures/paper-desk-dark-v2.webp"); /* 深色桌面纹理压到极淡，否则与卡片纹理叠在一起会很脏 */
+  --paper-grain: url("/textures/paper-card-dark-v2.webp");
   --paper-light: linear-gradient(transparent, transparent);
 }
 

@@ -1,0 +1,4 @@
+# 纸张纹理贴图：每次都向服务器确认是否更新（没变时返回 304，几乎不耗流量），
+# 避免贴图内容更新后访客的浏览器仍使用旧缓存。
+/textures/*
+  Cache-Control: public, max-age=0, must-revalidate
