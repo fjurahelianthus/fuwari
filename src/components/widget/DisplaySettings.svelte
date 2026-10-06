@@ -23,7 +23,7 @@ $: if (hue || hue === 0) {
             before:absolute before:-left-3 before:top-[0.33rem]"
         >
             {i18n(I18nKey.themeColor)}
-            <button aria-label="Reset to Default" class="btn-regular w-7 h-7 rounded-[2px] active:scale-[0.99] will-change-transform"
+            <button aria-label="Reset to Default" class="btn-regular w-7 h-7 rounded-[var(--radius-large)] active:scale-[0.99] will-change-transform"
                     class:opacity-0={hue === defaultHue} class:pointer-events-none={hue === defaultHue} on:click={resetHue}>
                 <div class="text-[var(--btn-content)]">
                     <Icon icon="fa6-solid:arrow-rotate-left" class="text-[0.875rem]"></Icon>
@@ -31,13 +31,13 @@ $: if (hue || hue === 0) {
             </button>
         </div>
         <div class="flex gap-1">
-            <div id="hueValue" class="transition bg-[var(--btn-regular-bg)] w-10 h-7 rounded-[2px] flex justify-center
+            <div id="hueValue" class="transition bg-[var(--btn-regular-bg)] w-10 h-7 rounded-[var(--radius-large)] flex justify-center
             font-bold text-sm items-center text-[var(--btn-content)]">
                 {hue}
             </div>
         </div>
     </div>
-    <div class="w-full h-6 px-1 bg-[oklch(0.80_0.10_0)] dark:bg-[oklch(0.70_0.10_0)] rounded-[2px] select-none">
+    <div class="w-full h-6 px-1 bg-[oklch(0.80_0.10_0)] dark:bg-[oklch(0.70_0.10_0)] rounded-[var(--radius-large)] select-none">
         <input aria-label={i18n(I18nKey.themeColor)} type="range" min="0" max="360" bind:value={hue}
                class="slider" id="colorSlider" step="5" style="width: 100%">
     </div>
@@ -57,7 +57,7 @@ $: if (hue || hue === 0) {
           -webkit-appearance none
           height 1rem
           width 0.5rem
-          border-radius 0.125rem
+          border-radius var(--radius-large)
           background rgba(255, 255, 255, 0.7)
           box-shadow none
           &:hover
@@ -69,7 +69,7 @@ $: if (hue || hue === 0) {
           -webkit-appearance none
           height 1rem
           width 0.5rem
-          border-radius 0.125rem
+          border-radius var(--radius-large)
           border-width 0
           background rgba(255, 255, 255, 0.7)
           box-shadow none
@@ -82,7 +82,7 @@ $: if (hue || hue === 0) {
           -webkit-appearance none
           height 1rem
           width 0.5rem
-          border-radius 0.125rem
+          border-radius var(--radius-large)
           background rgba(255, 255, 255, 0.7)
           box-shadow none
           &:hover
