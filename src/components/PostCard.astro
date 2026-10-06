@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import path from "node:path";
 import { Icon } from "astro-icon/components";
+import { siteConfig } from "../config";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import { getDir } from "../utils/url-utils";
@@ -36,6 +37,7 @@ const {
 } = Astro.props;
 const className = Astro.props.class;
 
+const label = entry.data.label ?? siteConfig.postLabel;
 const hasCover = image !== undefined && image !== null && image !== "";
 
 const coverWidth = "28%";
@@ -44,9 +46,9 @@ const { remarkPluginFrontmatter } = await entry.render();
 ---
 <div class:list={["card-base flex flex-col-reverse md:flex-col w-full rounded-[var(--radius-large)] overflow-hidden relative border-l-4 border-l-[var(--primary)]", className]} style={style}>
     <div class:list={["pl-6 md:pl-10 pr-6 md:pr-3 pt-5 md:pt-6 pb-6 relative", {"w-full md:w-[calc(100%_-_52px_-_12px)]": !hasCover, "w-full md:w-[calc(100%_-_var(--coverWidth)_-_12px)]": hasCover}]}>
-        <div class="mb-2 text-[0.7rem] uppercase tracking-[0.18em] text-black/35 dark:text-white/35 transition">
-            乾花
-        </div>
+        {label && <div class="mb-2 text-[0.7rem] uppercase tracking-[0.18em] text-black/35 dark:text-white/35 transition">
+            {label}
+        </div>}
         <a href={url}
            class="transition group w-full block font-bold mb-3 text-2xl md:text-[1.9rem] text-90
         hover:text-[var(--primary)] dark:hover:text-[var(--primary)]

@@ -3,6 +3,7 @@ import type { AUTO_MODE, DARK_MODE, LIGHT_MODE } from "@constants/constants";
 export type SiteConfig = {
 	title: string;
 	subtitle: string;
+	postLabel: string; // Default small label above each post title in the list; override per post with `label` in frontmatter
 
 	lang:
 		| "en"

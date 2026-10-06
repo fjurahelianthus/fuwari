@@ -11,6 +11,7 @@ const postsCollection = defineCollection({
 		tags: z.array(z.string()).optional().default([]),
 		category: z.string().optional().nullable().default(""),
 		lang: z.string().optional().default(""),
+		label: z.string().optional(), // Overrides siteConfig.postLabel on the post list card; an empty string hides it
 
 		/* For internal use */
 		prevTitle: z.string().default(""),

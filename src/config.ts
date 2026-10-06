@@ -10,6 +10,7 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "莉莉婭的花店",
 	subtitle: "Flōrēs Liliī",
+	postLabel: "乾花", // Default label above each post title in the list. Override per post with `label:` in frontmatter; `label: ""` hides it
 	lang: "zh_TW", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 305, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345

@@ -47,6 +47,11 @@
           "type": "list"
         },
         {
+          "title": "label",
+          "name": "label",
+          "type": "string"
+        },
+        {
           "title": "category",
           "name": "category",
           "type": "string"
