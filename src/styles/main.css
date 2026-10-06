@@ -5,6 +5,9 @@
 @layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
+        background-image: var(--paper-grain), var(--paper-light);
+        background-size: 512px 512px, auto;
+        background-blend-mode: multiply, normal;
         border: 1px solid var(--line-color);
         box-shadow: var(--paper-shadow);
     }
@@ -27,6 +30,9 @@
     .float-panel {
         @apply top-[5.25rem] rounded-[var(--radius-large)] overflow-hidden bg-[var(--float-panel-bg)] transition
         border border-[var(--line-color)];
+        background-image: var(--paper-grain), var(--paper-light);
+        background-size: 512px 512px, auto;
+        background-blend-mode: multiply, normal;
         box-shadow: var(--paper-shadow);
     }
     .float-panel-closed {
@@ -124,23 +130,24 @@ html {
     background-color: var(--page-bg);
 }
 
+:root.dark .card-base, :root.dark .float-panel {
+    background-blend-mode: screen, normal;
+}
+
 body {
-    background:
-        linear-gradient(90deg, rgba(80, 64, 43, 0.035) 1px, transparent 1px),
-        linear-gradient(180deg, rgba(80, 64, 43, 0.025) 1px, transparent 1px),
-        radial-gradient(circle at 20% 10%, rgba(120, 90, 54, 0.05), transparent 28rem),
-        var(--page-bg);
-    background-size: 28px 28px, 28px 28px, auto, auto;
-    color: oklch(0.25 0.018 72);
+    /* 桌面纹理统一由 html 的 --desk-fibers 提供，body 保持透明以免出现两层纹理 */
+    background: none;
+    color: oklch(0.17 0.010 60);
 }
 
 :root.dark body {
-    background:
-        linear-gradient(90deg, rgba(230, 220, 198, 0.025) 1px, transparent 1px),
-        linear-gradient(180deg, rgba(230, 220, 198, 0.018) 1px, transparent 1px),
-        radial-gradient(circle at 20% 10%, rgba(128, 86, 64, 0.12), transparent 30rem),
-        var(--page-bg);
-    color: oklch(0.84 0.012 82);
+    background: none;
+    color: oklch(0.88 0.012 90);
+}
+
+/* TOC：左侧细线 + 红笔色文字，当前章节在线上有红色标记 */
+.toc-link .toc-label {
+    color: var(--pen-red);
 }
 
 .custom-md img, #post-cover img {

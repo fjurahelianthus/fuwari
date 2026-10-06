@@ -7,6 +7,31 @@
   --font-cjk-mono: 'Courier Prime', 'Zhuque Fangsong (technical preview)', monospace;
 }
 
+/* 纸张质感（档案馆）：桌面与卡片纸纹均取自 ambientCG Paper006（CC0）与光线渐层。只改背景，不影响组件结构 */
+:root {
+  --pen-red: oklch(0.40 0.17 27);
+  --desk-tex: url("/textures/paper-desk.webp");
+  --paper-grain: url("/textures/paper-card-light.webp");
+  --paper-light: linear-gradient(transparent, transparent);
+}
+
+:root.dark {
+  --pen-red: oklch(0.72 0.18 27);
+  --desk-tex: url("/textures/paper-desk-dark.webp");
+  --paper-grain: url("/textures/paper-card-dark.webp");
+  --paper-light: linear-gradient(160deg, rgba(255,250,220,.05) 0%, transparent 45%, rgba(0,0,0,.18) 100%);
+}
+
+html {
+  background-image: var(--desk-tex);
+  background-size: 512px 512px;
+  background-blend-mode: overlay;
+}
+
+html.dark {
+  background-blend-mode: screen;
+}
+
 /* KaTeX 中文字体支持 */
 .katex {
   font-family: 'KaTeX_Main', var(--font-cjk), serif;
