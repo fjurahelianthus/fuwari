@@ -1,5 +1,5 @@
 .custom-md {
-    @apply leading-8 text-[oklch(0.20_0.010_60)] dark:text-[oklch(0.88_0.012_90)];
+    @apply leading-8 text-[oklch(0.20_0.010_60)] dark:text-[oklch(0.86_0.012_85)];
 
     h1 {
         @apply text-3xl border-b border-[var(--line-color)] pb-3;
@@ -14,7 +14,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        @apply font-bold tracking-normal text-[oklch(0.15_0.010_60)] dark:text-[oklch(0.93_0.012_90)];
+        @apply font-bold tracking-normal text-[oklch(0.15_0.010_60)] dark:text-[oklch(0.92_0.012_85)];
 
         .heading-anchor {
             @apply transition no-underline text-inherit;
